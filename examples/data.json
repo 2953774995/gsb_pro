@@ -1,0 +1,9 @@
+{
+  "shop": "Tiny & Co",
+  "min_price": 5,
+  "products": [
+    {"name": "Apple <organic>", "price": 3, "sale": true},
+    {"name": "Bread", "price": 5, "sale": false},
+    {"name": "Cheese & Wine", "price": 12, "sale": true}
+  ]
+}

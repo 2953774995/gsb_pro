@@ -1,0 +1,4 @@
+<li class="{% if loop.first %}first{% endif %}">
+  {{ loop.index }}. {{ product.name }} - ${{ product.price }}
+  {% if product.sale %}(SALE!){% endif %}
+</li>

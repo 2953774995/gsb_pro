@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tinytpl"
+version = "0.1.0"
+description = "A minimal template engine implemented from scratch with the Python standard library only"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+
+[project.scripts]
+tinytpl-cli = "tinytpl.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["tinytpl*"]

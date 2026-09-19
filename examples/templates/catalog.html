@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}{{ shop }} Catalog{% endblock %}
+{% block heading %}{{ shop }}{% endblock %}
+{% block content %}
+<ul>
+  {% for product in products %}{% include "_product.html" %}{% endfor %}
+</ul>
+<p>Total: {{ products | length }} products, min price: ${{ min_price }}</p>
+{% endblock %}
