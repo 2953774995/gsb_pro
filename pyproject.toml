@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "miniweb"
+version = "1.0.0"
+description = "A minimal HTTP/1.1 web server implemented with the Python standard library only"
+requires-python = ">=3.8"
+
+[project.scripts]
+miniweb = "miniweb.cli:main"
+
+[tool.setuptools]
+packages = ["miniweb"]
