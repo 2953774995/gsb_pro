@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "miniweb"
+version = "0.1.0"
+description = "A minimal HTTP/1.1 web server built from raw sockets (Python standard library only)."
+requires-python = ">=3.8"
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.scripts]
+miniweb = "miniweb.cli:main"
+
+[tool.setuptools]
+packages = ["miniweb"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+pythonpath = ["."]
