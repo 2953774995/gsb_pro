@@ -1,0 +1,3 @@
+#!/bin/sh
+# Convenience launcher so `./minidiff-cli ...` works without installation.
+exec python3 -m minidiff "$@"
