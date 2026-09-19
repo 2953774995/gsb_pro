@@ -1,0 +1,23 @@
+[build-system]
+requires = []
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "minimq"
+version = "0.1.0"
+description = "A minimal in-memory message queue with on-disk persistence (stdlib only)"
+readme = "README.md"
+requires-python = ">=3.7"
+license = { text = "MIT" }
+authors = [{ name = "minimq" }]
+dependencies = []
+
+[project.scripts]
+minimq-cli = "minimq.cli:main"
+
+[tool.setuptools]
+packages = ["minimq"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
