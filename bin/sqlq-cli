@@ -1,0 +1,3 @@
+#!/bin/sh
+# Convenience launcher so users can run ./bin/sqlq-cli without installation.
+exec python3 -m sqlq "$@"
