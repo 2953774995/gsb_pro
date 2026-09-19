@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+<head><title>{% block title %}Untitled{% endblock %}</title></head>
+<body>
+  <h1>{{ site_name }}</h1>
+  {% block content %}no content{% endblock %}
+  {% include "footer.html" %}
+</body>
+</html>

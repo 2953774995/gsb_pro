@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Users - {{ site_name }}{% endblock %}
+{% block content %}
+<ul>
+{% for user in users %}
+  <li>{{ loop.index }}. {{ user.name }}
+  {% if user.admin %}(admin){% else %}(user){% endif %}
+  {% if user.bio %}{{ user.bio }}{% endif %}
+  </li>
+{% endfor %}
+</ul>
+{% endblock %}

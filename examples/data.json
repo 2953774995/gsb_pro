@@ -1,0 +1,9 @@
+{
+  "site_name": "TinyTpl Demo",
+  "year": 2026,
+  "users": [
+    {"name": "Alice", "admin": true, "bio": "<b>root</b>"},
+    {"name": "Bob", "admin": false, "bio": ""},
+    {"name": "Carol <script>", "admin": false, "bio": "hello"}
+  ]
+}
