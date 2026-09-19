@@ -1,0 +1,3 @@
+#!/bin/sh
+# Run miniweb without requiring a package installation.
+exec python3 -m miniweb "$@"
