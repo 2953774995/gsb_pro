@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "regexlab"
+version = "0.1.0"
+description = "A mini regular expression engine implemented from scratch (stdlib only, no 're')."
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+
+[project.scripts]
+regexlab-cli = "regexlab.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["regexlab*"]
