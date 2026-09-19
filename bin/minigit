@@ -1,0 +1,19 @@
+#!/usr/bin/env python3
+"""Standalone entry point: ``python3 bin/minigit`` or ``./minigit``.
+
+Running via ``python3 -m minigit`` is equally supported (and preferred
+in tests); this thin launcher exists so the tool can be invoked as a
+single file too.
+"""
+
+import os
+import sys
+
+_HERE = os.path.dirname(os.path.abspath(__file__))
+_ROOT = os.path.dirname(_HERE)  # repository root containing the minigit package
+sys.path.insert(0, _ROOT)
+
+from minigit.cli import main  # noqa: E402
+
+if __name__ == "__main__":
+    sys.exit(main())
