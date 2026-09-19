@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "minidiff"
+version = "0.1.0"
+description = "A tiny standard-library-only unified diff and patch tool"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = []
+license = { text = "MIT" }
+authors = [{ name = "minidiff" }]
+
+[project.scripts]
+minidiff = "minidiff.cli:main"
+
+[tool.setuptools]
+packages = ["minidiff"]
