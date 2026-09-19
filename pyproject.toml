@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "minisearch"
+version = "0.1.0"
+description = "A mini full-text search engine in pure Python (standard library only)"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+
+[project.scripts]
+minisearch-cli = "minisearch.cli:main"
+
+[tool.setuptools]
+packages = ["minisearch"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
