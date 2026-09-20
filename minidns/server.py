@@ -183,7 +183,9 @@ class DNSServer(object):
     # ------------------------------------------------------------------
 
     def start(self):
-        """绑定端口并后台启动 UDP/TCP 服务。port=0 时自动分配。"""
+        """绑定端口并后台启动 UDP/TCP 服务。port=0 时自动分配。幂等：重复调用只绑一次。"""
+        if self._threads:
+            return self.port
         self.udp_sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         self.udp_sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
         self.udp_sock.bind((self.host, self.port))
