@@ -1,0 +1,16 @@
+[project]
+name = "minibroker"
+version = "0.1.0"
+description = "A tiny standard-library-only TCP pub/sub message broker"
+requires-python = ">=3.8"
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.scripts]
+mb-cli = "minibroker.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
