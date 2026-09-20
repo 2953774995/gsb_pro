@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mdsite"
+version = "0.1.0"
+description = "A tiny static site generator for Markdown docs, stdlib only."
+requires-python = ">=3.8"
+
+[project.scripts]
+mdsite = "mdsite.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["mdsite*"]
+
+[tool.setuptools.package-data]
+mdsite = ["themes/*.css", "templates/*.html"]

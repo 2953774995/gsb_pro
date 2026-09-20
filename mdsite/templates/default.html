@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title }} · {{ site_name }}</title>
+  <link rel="stylesheet" href="{{ root }}assets/style.css">
+</head>
+<body>
+  <nav class="nav">
+    <a class="brand" href="{{ root }}index.html">{{ site_name }}</a>
+    <span class="nav-links">
+    {% for link in nav_links %}
+      <a href="{{ link.href }}">{{ link.text }}</a>
+    {% endfor %}
+    </span>
+  </nav>
+  <div class="layout">
+    <main class="content">
+      {{ content }}
+    </main>
+    {% if has_toc %}
+    <aside class="toc">
+      <div class="toc-title">本页目录</div>
+      {{ toc }}
+    </aside>
+    {% endif %}
+  </div>
+  <footer class="footer">Built with <strong>mdsite</strong> · theme: {{ theme }}</footer>
+</body>
+</html>
