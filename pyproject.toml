@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zipmini"
+version = "0.1.0"
+description = "From-scratch DEFLATE codec and ZIP archiver (no zlib/zipfile)"
+requires-python = ">=3.9"
+
+[project.scripts]
+zipmini = "zipmini.cli:main"
+
+[tool.setuptools]
+packages = ["zipmini"]
