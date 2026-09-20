@@ -1,0 +1,29 @@
+$ORIGIN example.com.
+$TTL 300
+
+@   IN  SOA ns1.example.com. admin.example.com. (
+            2026092001 ; serial
+            7200       ; refresh
+            3600       ; retry
+            1209600    ; expire
+            300 )      ; minimum
+    IN  NS  ns1
+    IN  NS  ns2
+ns1 IN  A   192.168.1.2
+ns2 IN  A   192.168.1.3
+
+; 多条 A 记录，演示 round-robin
+@   IN  A   192.168.1.10
+    IN  A   192.168.1.11
+    IN  A   192.168.1.12
+
+www IN  A   192.168.1.20
+    IN  AAAA ::1
+    IN  TXT "hello minidns" "v=spf1 -all"
+
+; CNAME 链：blog -> web -> www
+web IN  CNAME   www
+blog    IN  CNAME   web
+
+mail    IN  A   192.168.1.25
+@   IN  MX  10 mail
