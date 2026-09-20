@@ -1,0 +1,8 @@
+[
+  {"sku": 1001, "name": "矿泉水 550ml", "category": "饮料", "price": 2.0},
+  {"sku": 1002, "name": "可乐 330ml", "category": "饮料", "price": 3.5},
+  {"sku": 1003, "name": "全麦面包", "category": "食品", "price": 6.0},
+  {"sku": 1004, "name": "饭团 金枪鱼", "category": "鲜食", "price": 5.5},
+  {"sku": 1005, "name": "关东煮 萝卜", "category": "鲜食", "price": 2.5},
+  {"sku": 1006, "name": "纸巾 10包", "category": "日用", "price": 9.9}
+]

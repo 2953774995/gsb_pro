@@ -1,0 +1,10 @@
+[
+  {"order_id": 90001, "store": "S01", "sku": 1001, "qty": 2, "amount": 4.0},
+  {"order_id": 90002, "store": "S01", "sku": 1004, "qty": 1, "amount": 5.5},
+  {"order_id": 90003, "store": "S02", "sku": 1002, "qty": 3, "amount": 10.5},
+  {"order_id": 90004, "store": "S02", "sku": 1003, "qty": 1, "amount": 6.0},
+  {"order_id": 90005, "store": "S01", "sku": 1005, "qty": 4, "amount": 10.0},
+  {"order_id": 90006, "store": "S03", "sku": 1001, "qty": 1, "amount": 2.0},
+  {"order_id": 90007, "store": "S03", "sku": 1006, "qty": 1, "amount": null},
+  {"order_id": 90008, "store": "S02", "sku": 1004, "qty": 2, "amount": 11.0}
+]

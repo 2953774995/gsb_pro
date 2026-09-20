@@ -1,0 +1,8 @@
+[
+  {"store": "S01", "sku": 1001, "stock": 48},
+  {"store": "S01", "sku": 1004, "stock": 5},
+  {"store": "S02", "sku": 1002, "stock": 30},
+  {"store": "S02", "sku": 1003, "stock": 0},
+  {"store": "S03", "sku": 1001, "stock": 12},
+  {"store": "S03", "sku": 1006, "stock": null}
+]
