@@ -1,0 +1,29 @@
+; example.com 权威 zone 示例
+$ORIGIN example.com.
+$TTL 300
+
+; SOA：括号多行续行
+@   IN  SOA ns1 admin.example.com. (
+        2026092001 ; serial
+        7200       ; refresh
+        3600       ; retry
+        1209600    ; expire
+        300 )      ; minimum
+
+        IN  NS      ns1
+        IN  NS      ns2
+@       IN  MX 10   mail
+        IN  TXT     "v=spf1 -all" "env=internal"
+
+; 多条 A 记录做轮询
+ns1     IN  A       10.0.0.1
+ns2     IN  A       10.0.0.2
+www     300 IN  A   192.168.1.10
+www     300 IN  A   192.168.1.11
+www     300 IN  A   192.168.1.12
+mail    IN  A       192.168.1.25
+        IN  AAAA    fd00::25
+
+; CNAME 链：web -> www -> A
+web     IN  CNAME   www
+api     IN  CNAME   web.internal.example.com.

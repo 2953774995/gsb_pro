@@ -1,0 +1,3 @@
+#!/bin/sh
+# 便捷入口：bin/minidns serve ... / bin/minidns query ...
+exec python3 -m minidns "$@"

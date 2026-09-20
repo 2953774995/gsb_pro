@@ -1,0 +1,8 @@
+; 子域单独一个 zone 文件
+$ORIGIN internal.example.com.
+$TTL 1h
+
+@       IN  NS      ns1.example.com.
+web     IN  A       10.1.0.8
+db      IN  A       10.1.0.9
+db      IN  A       10.1.0.10

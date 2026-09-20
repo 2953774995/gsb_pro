@@ -1,0 +1,8 @@
+[project]
+name = "minidns"
+version = "0.1.0"
+description = "迷你 DNS 服务器：权威 zone + 递归转发 + 缓存（纯标准库）"
+requires-python = ">=3.8"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
