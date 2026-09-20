@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ title }}</title>
+<link rel="stylesheet" href="{{ root }}/assets/style.css">
+</head>
+<body data-theme="{{ theme }}">
+<header class="navbar">
+  <a class="brand" href="{{ root }}/index.html">mdsite</a>
+  <nav class="nav">{{ nav }}</nav>
+</header>
+<div class="layout">
+  <main class="content">
+{{ content }}
+  </main>
+  <aside class="sidebar">
+{{ toc }}
+  </aside>
+</div>
+<footer class="footer">Built with mdsite</footer>
+</body>
+</html>
