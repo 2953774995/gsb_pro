@@ -1,0 +1,3 @@
+#!/bin/sh
+# 终端迷你电子表格入口。
+exec python3 -m sheet "$@"
