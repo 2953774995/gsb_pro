@@ -1,0 +1,4 @@
+#!/bin/sh
+# datamask-cli launcher: runs the CLI with the repo on PYTHONPATH.
+DIR="$(cd "$(dirname "$0")" && pwd)"
+PYTHONPATH="$DIR${PYTHONPATH:+:$PYTHONPATH}" exec python3 -m datamask.cli "$@"
