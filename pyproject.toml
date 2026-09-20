@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "datamask"
+version = "0.1.0"
+description = "客服工单敏感信息检测与脱敏工具：自研模式匹配引擎，仅依赖标准库"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+
+[project.scripts]
+datamask-cli = "datamask.cli:main"
+
+[tool.setuptools]
+packages = ["datamask"]
