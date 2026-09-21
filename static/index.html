@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GWAdmin - 边缘网关管理</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <h1>GWAdmin</h1>
+      <p>工厂边缘网关本地管理 Agent</p>
+    </header>
+    <section class="card">
+      <h2>设备状态</h2>
+      <pre id="status">加载中...</pre>
+    </section>
+    <section class="card">
+      <h2>采样与告警配置</h2>
+      <form id="config-form">
+        <label>采样间隔（毫秒，100-3600000）
+          <input name="sample_interval" type="number" min="100" max="3600000" required>
+        </label>
+        <label>告警阈值（0-100）
+          <input name="alarm_threshold" type="number" min="0" max="100" step="0.1" required>
+        </label>
+        <button type="submit">保存配置</button>
+      </form>
+      <p id="message" role="status"></p>
+    </section>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>

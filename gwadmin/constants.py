@@ -1,0 +1,15 @@
+"""Constants used by gwadmin (Python standard library only)."""
+
+SERVER_NAME = "gwadmin"
+VERSION = "1.0.0"
+SERVER_TOKEN = f"{SERVER_NAME}/{VERSION}"
+
+DEFAULT_HOST = "0.0.0.0"
+DEFAULT_PORT = 8080
+DEFAULT_WORKERS = 16
+DEFAULT_ROOT = "static"
+DEFAULT_CONFIG_PATH = "data/config.json"
+DEFAULT_HEADER_LIMIT = 8 * 1024
+DEFAULT_BODY_LIMIT = 1024 * 1024
+DEFAULT_IDLE_TIMEOUT = 30.0
+LISTEN_BACKLOG = 128
